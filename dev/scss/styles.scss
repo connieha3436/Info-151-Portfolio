@@ -16,19 +16,8 @@
 
 // Sections Styles
 @forward "sections/_about";
-
-.nav-bar {
-    background-color: var(--light-blue);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 2px 10 px rgba(0, 0, 0, 0.05);
-    margin-bottom: 30px;
-}
-
-.nav-bar-links {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
+@forward "sections/_associations";
+@forward "sections/_contact";
+@forward "sections/_index";
+@forward "sections/_projects";
+@forward "sections/_resume";
