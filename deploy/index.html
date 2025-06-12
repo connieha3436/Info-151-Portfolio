@@ -2,15 +2,17 @@
 <link rel="stylesheet" href="css/styles.css">
 <html lang="en">
     <head><!-- @import "global/head.kit" -->
-        <script src="js/scripts-min.js"></script>
+        <script src="js/scripts-dist.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     </head>
     
 
 <body>
     <header>
     <nav class="nav-bar">
-        <ul class="nav-bar-links"></ul>
-          <li><a href="index.html"><img src="img/cyberhalogo.png" alt="CyberHA Logo" class="logo">Home</a></li>
+        <ul class="nav-bar-links">
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -20,9 +22,25 @@
           </nav>
     </header>
 
-<h1>"Cybersecurity is the new business insurance--essential, invisible, and vital to growth. Protect your data like you protect your reputation--with vigilance and care." --Allison Dunn</h1>
+    <div class="image-box" data-aos="fade-up" data-aos-duration="1000">
+        <img src="img/cyberhalogo.png" alt="CyberHa logo" class="logo">
+        <div class="text-box">
+        <h1 class="quote" style="text-align: center;">
+          "Cybersecurity is the new business insurance—essential, invisible, and vital to growth.
+          Protect your data like you protect your reputation—with vigilance and care."
+          <br><b>—Allison Dunn</b></br>
+        </h1>
+      </div>
+    </div>
 
 
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 1000,
+          once: true
+        });
+      </script>
 </body>
 
 
