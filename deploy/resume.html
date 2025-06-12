@@ -3,14 +3,10 @@
 <html lang="en">
     <head><!-- @import "global/head.kit" -->
         <script src="js/scripts-dist.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     </head>
     <header>
         <nav class="nav-bar">
-            <div class="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
             <ul class="nav-bar-links">
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
@@ -36,7 +32,7 @@
         </p>
     </header>
 
-    <section class="education-section:">
+    <section class="education-section:" data-aos="fade-up" data-aos-duration="1000">
         <h2>Education</h2>
         <p><strong>Drexel University, Pennoni Honors College</strong> - Philadelphia, PA <br>
         <em>Student Assistant and Support Manager</em> - Aug 2024 - Present</p>
@@ -58,7 +54,7 @@
         </ul>
     </section>
 
-    <section class="project-experience-section">
+    <section class="project-experience-section" data-aos="fade-up" data-aos-duration="1000">
         <h2>Project Experience</h2>
         <p><strong>Weather Planner</strong> - Frontend Developer (Apr 2024 - Jun 2024)</p>
         <ul>
@@ -74,7 +70,7 @@
         </ul>
     </section>
 
-    <section class="skills-certs-section">
+    <section class="skills-certs-section" data-aos="fade-up" data-aos-duration="1000">
         <h2>Skills & Certifications</h2>
         <ul>
             <li>Programming languages: Python, HTML, CSS, JavaScript</li>
@@ -82,7 +78,7 @@
         </ul>
     </section>
 
-    <section class="extracurriculars-section">
+    <section class="extracurriculars-section" data-aos="fade-up" data-aos-duration="1000">
         <h2>Extracurriculars</h2>
         <ul>
             <li><strong>Drexel Gaming Association</strong> - Marketing Lead – Promoted events and managed outreach as part of the marketing team</li>
@@ -90,15 +86,14 @@
             </section>
         </div>
 
-        <script>
-            const burger = document.querySelector('.burger');
-            const navBarLinks = document.querySelector('.nav-bar-links');
-        
-            burger.addEventListener('click', () => {
-              navBarLinks.classList.toggle('nav-active');
-              burger.classList.toggle('toggle');
-            });
-            </script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
+    
 </body>
 
 

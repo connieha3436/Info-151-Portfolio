@@ -3,17 +3,14 @@
 <html lang="en">
     <head><!-- @import "global/head.kit" -->
         <script src="js/scripts-dist.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     </head>
     
 
 <body>
     <header>
     <nav class="nav-bar">
-        <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+
         <ul class="nav-bar-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -24,28 +21,53 @@
           </ul>
           </nav>
     </header>
+    
+    <section class="coursework">
+        <div class="project-card">
+        <h1>Relevant Coursework</h1>
+        <ul style="list-style-type: none;">
+            <li>
+                <a href="https://www.figma.com/proto/wiPkwCDogzisFKZrLNzogH/Weather-Planner?node-id=0-1&t=oFoSSutRz46I6U6j-1" target="_blank"><strong>INFO 310: Human Centered Design</strong></a>
+                </li>
+            <li>
+                <a href="doc/Emotet Malware.pdf" target="_blank">CT 212: Forensics</a></li>
+            <li>
+                <a href="doc/SolarWinds Supply Chain Attack.pdf" target="_blank">CT 201: Information Technology Security I</a></li>
+            <li>
+                <a href="doc/Cyber Attack Project CT 301.pdf" target="_blank"> 301: Information Technology Security II</a></li>
+            <li>CT 140: Network Administration</li>
+</ul>
+        </div>
+    </section>
 
-    <section class="projects-container" data-aos="fade-up" data-aos-duration="1000">
-        <div class="association-card">
+    <section class="projects-container">
+        <div class="project-card">
         
-    <h1>Asian American Women's Coalition (AAWC)</h1>
-    <a href="https://aawcphilly.org" target="_blank">
-    <img src="img/aawc.png" alt="AAWC" class="aawc-logo">
+    <h1>Weather Planner</h1>
+    <a href="https://www.figma.com/proto/wiPkwCDogzisFKZrLNzogH/Weather-Planner?node-id=0-1&t=oFoSSutRz46I6U6j-1" target="_blank">
+    <img src="img/weatherplanner.png" alt="figma" class="figma" data-aos="fade-left" data-aos-offset="400">
 </a>
-    <p>The Asian American Women's Coalition (AAWC) is a multi-cultural group dedicated to the concerns of all Asian American Women. 
-        The AAWC was formed in 1987 as the result of a successful collaboration of the community and the Balch Institute of Ethnic Studies to sponsor the exhibit, "Chinese Women of America 1834-1982." </p>
+    <p>I developed a weather planner with a multidisciplinary team on a software called Figma. I created wireframes and interactive prototypes to guide development and gather user feedback while conducting usability testing and implementing feedback to enhance user experience and interface design.</p>
+        </div>
+
+        <div class="project-card">
+    <h1>TrackIt!</h1>
+    <a href="https://drive.google.com/file/d/1Y5pxASSOnpirVCAzhupChxs3KR9zidIK/view?usp=drive_link" target="_blank">
+        <img src="img/trackit.png" alt="trackit" class="trackit" data-aos="fade-right" data-aos-offset="400">
+    </a>
+        <p>I collaborated with a team in an Agile environment to develop a website using HTML, CSS, and JavaScript that enhances user gameplay for supported multiplayer video games and tracks player progression
+            We developed a year-long prototype in GitLab using Python and game engine APIs to deliver real-time performance metrics based on user inputs.</p>
+
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-        const burger = document.querySelector('.burger');
-        const navBarLinks = document.querySelector('.nav-bar-links');
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
     
-        burger.addEventListener('click', () => {
-          navBarLinks.classList.toggle('nav-active');
-          burger.classList.toggle('toggle');
-        });
-        </script>
-
 
 </body>
 

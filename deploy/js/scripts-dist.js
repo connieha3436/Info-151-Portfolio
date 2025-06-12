@@ -1,1 +1,0 @@
-!function(){var e=document.querySelector(".burger"),t=document.querySelector(".nav-bar-links");e.addEventListener("click",(function(){t.classList.toggle("nav-active"),e.classList.toggle("toggle")})),AOS.init({duration:1e3,once:!0})}();
