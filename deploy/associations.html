@@ -2,13 +2,19 @@
 <link rel="stylesheet" href="css/styles.css">
 <html lang="en">
     <head><!-- @import "global/head.kit" -->
-        <script src="js/scripts-min.js"></script>
+        <script src="js/scripts-dist.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     </head>
     
 
 <body>
     <header>
     <nav class="nav-bar">
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         <ul class="nav-bar-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -20,7 +26,57 @@
           </nav>
     </header>
 
+    <section class="association-container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="association-card">
+        
+    <h1>Asian American Women's Coalition (AAWC)</h1>
+    <a href="https://aawcphilly.org" target="_blank">
+    <img src="img/aawc.png" alt="AAWC" class="aawc-logo">
+</a>
+    <p>The Asian American Women's Coalition (AAWC) is a multi-cultural group dedicated to the concerns of all Asian American Women. 
+        The AAWC was formed in 1987 as the result of a successful collaboration of the community and the Balch Institute of Ethnic Studies to sponsor the exhibit, "Chinese Women of America 1834-1982." </p>
+    </div>
 
+    <div class="association-card">
+    <h1>Drexel CyberDragons</h1>
+    <a href="https://drexel.edu/cybersecurity/education/cyberdragons/" target="_blank">
+    <img src="img/drexel.jpg" alt="drexel" class="drexel-logo">
+</a>
+    <p>This Drexel Cybersecurity club is open to anyone who wishes to learn about cybersecurity and gain hands-on experience in cyber-defense. </p>
+</div>
+<div class="association-card">
+    <h1>MERCK</h1>
+    <a href="https://www.merck.com" target="_blank">
+    <img src="img/merck.jpg" alt="merck" class="merck-logo">
+</a>
+    <p>Merck is a research-intensive company that develops medicines and vaccines for people and animals. </p>
+</div>
+
+<div class="association-card">
+    <h1>Information Systems Security Association (ISSA)</h1>
+    <a href="https://www.issa.org" target="_blank">
+    <img src="img/issa.png" alt="issa" class="issa-logo">
+</a>
+    <p>The Information Systems Security Association (ISSA)® is a not-for-profit, international organization of information security professionals and practitioners. It provides educational forums, publications, and peer interaction opportunities that enhance the knowledge, skill, and professional growth of its members. </p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const navBarLinks = document.querySelector('.nav-bar-links');
+
+    burger.addEventListener('click', () => {
+      navBarLinks.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+    });
+    </script>
 
 </body>
 

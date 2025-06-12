@@ -2,13 +2,18 @@
 <link rel="stylesheet" href="css/styles.css">
 <html lang="en">
     <head><!-- @import "global/head.kit" -->
-        <script src="js/scripts-min.js"></script>
+        <script src="js/scripts-dist.js"></script>
     </head>
     
 
 <body>
     <header>
     <nav class="nav-bar">
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         <ul class="nav-bar-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -20,6 +25,26 @@
           </nav>
     </header>
 
+    <section class="projects-container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="association-card">
+        
+    <h1>Asian American Women's Coalition (AAWC)</h1>
+    <a href="https://aawcphilly.org" target="_blank">
+    <img src="img/aawc.png" alt="AAWC" class="aawc-logo">
+</a>
+    <p>The Asian American Women's Coalition (AAWC) is a multi-cultural group dedicated to the concerns of all Asian American Women. 
+        The AAWC was formed in 1987 as the result of a successful collaboration of the community and the Balch Institute of Ethnic Studies to sponsor the exhibit, "Chinese Women of America 1834-1982." </p>
+    </div>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const navBarLinks = document.querySelector('.nav-bar-links');
+    
+        burger.addEventListener('click', () => {
+          navBarLinks.classList.toggle('nav-active');
+          burger.classList.toggle('toggle');
+        });
+        </script>
 
 
 </body>

@@ -26,3 +26,63 @@
     border-radius: 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
+
+.association-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    font-family: 'Playfair Display', serif;
+    padding: 40px 20px;
+    justify-items: center;
+
+}
+
+.association-card {
+    background-color: var(--White);
+    color: var(--Black);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.association-card img {
+    width: 150px;
+    height: auto;
+    border-radius: 12px;
+    margin: 10px 0;
+    border: 1px solid var(--Black);
+}
+
+.association-card p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--Black);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-bar-links {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.nav-bar-links.nav-active {
+    display: flex;
+}

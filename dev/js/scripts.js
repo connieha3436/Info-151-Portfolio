@@ -1,8 +1,13 @@
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-//..
+const burger=document.querySelector('.burger');
+const nav=document.querySelector('.nav-bar-links');
+
+burger.addEventListener('click',()=>{
+    nav.classList.toggle('nav-active');
+    burger.classList.toggle('toggle');
+});
+
 AOS.init({
     duration: 1000,
-    once: true});
+    once: true,
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+});

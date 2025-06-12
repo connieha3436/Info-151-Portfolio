@@ -56,3 +56,29 @@
     font-size: 1.1rem;
     line-height: 1.6;
 }
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--Black);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-bar-links {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.nav-bar-links.nav-active {
+    display: flex;
+}
