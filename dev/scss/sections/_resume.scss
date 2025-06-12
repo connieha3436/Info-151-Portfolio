@@ -1,9 +1,8 @@
 .nav-bar {
     background-color: var(--light-blue);
-    padding: 20px;
+    padding: 20px 40px;
     border-radius: 20px;
-    -webkit-box-shadow: 0 2px 10 px rgba(0, 0, 0, 0.05);
-            box-shadow: 0 2px 10 px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10 px rgba(0, 0, 0, 0.05);
     margin-bottom: 30px;
   }
   
@@ -11,30 +10,33 @@
     list-style: none;
     font-family: 'Playfair Display', serif;
     font-size: 35px;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    gap: 200px;
+    align-items: center;
   }
 
-    .nav-bar-links li a{
-        text-decoration: none;
-        padding: 10px 20px;
-        background-color: var(--White);
-        color: var(--dark-blue);
-        border-radius: 25px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-        font-weight: 500;
-        border-color: var(--dark-blue);
-        border-width: 1px;
-        border-style: solid;
-    }
+  .nav-bar-links li a{
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: var(--White);
+    color: var(--Black);
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
 
-    .nav-bar-links li a:hover {
-        background-color: var(--White);
-      }
+.resume-container {
+    font-family: 'Playfair Display', serif;
+    background-color: var(--White);
+    color: var(--Black);
+    font-size: 1.15rem;
+    padding: 40px;
+    margin: auto;
+    text-align: left;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    max-width: 1000px;
+    border-radius: 25px
+}
 
-      .nav-bar-links li a.active {
-        background-color: var(--White);
-        color: var(--Black);
-        font-weight: 600;
-      }
